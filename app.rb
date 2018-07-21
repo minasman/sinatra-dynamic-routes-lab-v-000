@@ -16,7 +16,7 @@ get '/say/:number/:phrase' do
   num = params[:number].to_i
   phrase = params[:phrase]
   while num > 0 do
-    "<h1>hello</h1>"
+    "#{phrase}"
     num = num - 1 
   end
 end
