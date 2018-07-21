@@ -13,9 +13,12 @@ get '/square/:number' do
 end
 
 get '/say/:number/:phrase' do
-  @num = params[:number].to_i
-  @phrase = params[:phrase]
-  @num.times {"#{@num} #{@phrase}"}
+  num = params[:number].to_i
+  phrase = params[:phrase]
+  while num > 0 do
+    "hello"
+    num = num - 1 
+  end
   
 end
 
